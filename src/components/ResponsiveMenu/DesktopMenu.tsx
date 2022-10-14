@@ -1,5 +1,6 @@
-import { Box, Flex, Img, Link } from '@chakra-ui/react';
+import { Box, Img, Link, Grid, GridItem } from '@chakra-ui/react';
 import { Link as ReactRouterLink } from 'react-router-dom';
+import '@fontsource/fredoka-one';
 
 export default function DesktopMenu({
   children,
@@ -7,37 +8,165 @@ export default function DesktopMenu({
   children: JSX.Element | Array<JSX.Element>;
 }) {
   return (
-    <div style={{ height: '200vh' }}>
-      <Flex
+    <div>
+      <Grid
+        templateColumns="1fr 1fr  1fr  200px 1fr 1fr 1fr "
+        zIndex="modal"
         position="sticky"
         top="0"
-        justifyContent="space-around"
-        px="10"
-        py="5"
+        px="5"
+        py="2"
         bg="blue.300"
+        h="20"
+        gap="10px"
       >
-        <Box display="flex" alignItems="center">
-          <Link as={ReactRouterLink} to="/lojas" fontSize="xl">
-            Lojas
-          </Link>
-        </Box>
-        <Box display="flex" alignItems="center">
-          <Link as={ReactRouterLink} to="/produtos" fontSize="xl">
-            Produtos
-          </Link>
-        </Box>
-        <Img src={require('../../assets/urla.png')} maxH="20"></Img>
-        <Box display="flex" alignItems="center">
-          <Link as={ReactRouterLink} to="/fale-conosco" fontSize="xl">
-            Fale Conosco
-          </Link>
-        </Box>
-        <Box display="flex" alignItems="center">
-          <Link as={ReactRouterLink} to="/trabalhe-conosco" fontSize="xl">
-            Trabalhe Conosco
-          </Link>
-        </Box>
-      </Flex>
+        <GridItem w="100%" h="16" justifyContent="center" display="flex">
+          <Box display="flex" w="100%" h="100%">
+            <Link
+              as={ReactRouterLink}
+              to="/sobre-o-urla"
+              fontSize="xl"
+              w="100%"
+              h="100%"
+              textAlign="center"
+              p="16px 0"
+              _hover={{
+                background: 'blue.200',
+                color: 'black',
+                fontSize: '2xl',
+                p: '10px',
+                borderRadius: 'xl',
+                h: '20',
+              }}
+            >
+              Sobre o Urla
+            </Link>
+          </Box>
+        </GridItem>
+
+        <GridItem w="100%" h="16" justifyContent="center" display="flex">
+          <Box display="flex" w="100%" h="100%">
+            <Link
+              as={ReactRouterLink}
+              to="/lojas"
+              fontSize="xl"
+              w="100%"
+              h="100%"
+              textAlign="center"
+              p="16px 0"
+              _hover={{
+                background: 'blue.200',
+                color: 'black',
+                fontSize: '2xl',
+                p: '10px',
+                borderRadius: 'xl',
+                h: '20',
+              }}
+            >
+              Lojas
+            </Link>
+          </Box>
+        </GridItem>
+
+        <GridItem w="100%" h="16" justifyContent="center" display="flex">
+          <Box display="flex" w="100%" h="100%">
+            <Link
+              as={ReactRouterLink}
+              to="/produtos"
+              fontSize="xl"
+              w="100%"
+              h="100%"
+              p="16px"
+              textAlign="center"
+              _hover={{
+                background: 'blue.200',
+                color: 'black',
+                fontSize: '2xl',
+                p: '10px',
+                borderRadius: 'xl',
+                h: '20',
+              }}
+            >
+              Produtos
+            </Link>
+          </Box>
+        </GridItem>
+        <GridItem w="100%" h="16" justifyContent="center" display="flex">
+          <Img src={require('../../assets/urla.png')} maxH="28"></Img>
+        </GridItem>
+
+        <GridItem w="100%" h="16" justifyContent="center" display="flex">
+          <Box display="flex" w="100%" h="100%">
+            <Link
+              as={ReactRouterLink}
+              to="/fale-conosco"
+              fontSize="xl"
+              w="100%"
+              h="100%"
+              p="16px"
+              textAlign="center"
+              _hover={{
+                background: 'blue.200',
+                color: 'black',
+                fontSize: '2xl',
+                p: '10px',
+                borderRadius: 'xl',
+                h: '20',
+              }}
+            >
+              Fale Conosco
+            </Link>
+          </Box>
+        </GridItem>
+
+        <GridItem w="100%" h="16" justifyContent="center" display="flex">
+          <Box display="flex" w="100%" h="100%">
+            <Link
+              as={ReactRouterLink}
+              to="/trabalhe-conosco"
+              fontSize="xl"
+              w="100%"
+              h="100%"
+              p="16px"
+              textAlign="center"
+              _hover={{
+                background: 'blue.200',
+                color: 'black',
+                fontSize: '2xl',
+                p: '10px',
+                borderRadius: 'xl',
+                h: '20',
+              }}
+            >
+              Trabalhe Conosco
+            </Link>
+          </Box>
+        </GridItem>
+        <GridItem w="100%" h="16" justifyContent="center" display="flex">
+          <Box display="flex" w="100%" h="100%">
+            <Link
+              as={ReactRouterLink}
+              to="/trabalhe-conosco"
+              fontSize="xl"
+              w="100%"
+              h="100%"
+              p="16px"
+              textAlign="center"
+              _hover={{
+                background: 'blue.200',
+                color: 'black',
+                fontSize: '2xl',
+                p: '10px',
+                borderRadius: 'xl',
+                h: '20',
+              }}
+            >
+              Dúvidas?
+            </Link>
+          </Box>
+        </GridItem>
+      </Grid>
+      <Box w="100%" h="8px" bg="blue.200" mb="2"></Box>
 
       {children}
     </div>

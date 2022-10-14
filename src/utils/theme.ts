@@ -4,8 +4,9 @@ const theme = extendTheme({
   styles: {
     global: () => ({
       body: {
-        bg: "blue.400",
+        bg: "white",
         color: 'cyan.50',
+        fonts: "Fredoka One"
       },
     }),
   },

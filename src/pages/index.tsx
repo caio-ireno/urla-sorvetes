@@ -1,3 +1,9 @@
+import Carousel from '../components/Carousel';
+
 export default function Index() {
-  return <div>Olá</div>;
+  return (
+    <div>
+      <Carousel />
+    </div>
+  );
 }
