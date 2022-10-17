@@ -20,12 +20,12 @@ export default function DesktopMenu({
         h="20"
         gap="10px"
       >
-        <GridItem w="100%" h="16" justifyContent="center" display="flex">
+        <GridItem w="100%" justifyContent="center" display="flex">
           <Box display="flex" w="100%" h="100%">
             <Link
               as={ReactRouterLink}
               to="/sobre-o-urla"
-              fontSize="xl"
+              fontSize={{ md: 'sm', lg: 'xl' }}
               w="100%"
               h="100%"
               textAlign="center"
@@ -44,12 +44,12 @@ export default function DesktopMenu({
           </Box>
         </GridItem>
 
-        <GridItem w="100%" h="16" justifyContent="center" display="flex">
+        <GridItem w="100%" justifyContent="center" display="flex">
           <Box display="flex" w="100%" h="100%">
             <Link
               as={ReactRouterLink}
               to="/lojas"
-              fontSize="xl"
+              fontSize={{ md: 'sm', lg: 'xl' }}
               w="100%"
               h="100%"
               textAlign="center"
@@ -68,12 +68,12 @@ export default function DesktopMenu({
           </Box>
         </GridItem>
 
-        <GridItem w="100%" h="16" justifyContent="center" display="flex">
+        <GridItem w="100%" justifyContent="center" display="flex">
           <Box display="flex" w="100%" h="100%">
             <Link
               as={ReactRouterLink}
               to="/produtos"
-              fontSize="xl"
+              fontSize={{ md: 'sm', lg: 'xl' }}
               w="100%"
               h="100%"
               p="16px"
@@ -95,12 +95,12 @@ export default function DesktopMenu({
           <Img src={require('../../assets/urla.png')} maxH="28"></Img>
         </GridItem>
 
-        <GridItem w="100%" h="16" justifyContent="center" display="flex">
+        <GridItem w="100%" justifyContent="center" display="flex">
           <Box display="flex" w="100%" h="100%">
             <Link
               as={ReactRouterLink}
               to="/fale-conosco"
-              fontSize="xl"
+              fontSize={{ md: 'sm', lg: 'xl' }}
               w="100%"
               h="100%"
               p="16px"
@@ -119,12 +119,12 @@ export default function DesktopMenu({
           </Box>
         </GridItem>
 
-        <GridItem w="100%" h="16" justifyContent="center" display="flex">
+        <GridItem w="100%" justifyContent="center" display="flex">
           <Box display="flex" w="100%" h="100%">
             <Link
               as={ReactRouterLink}
               to="/trabalhe-conosco"
-              fontSize="xl"
+              fontSize={{ md: 'sm', lg: 'xl' }}
               w="100%"
               h="100%"
               p="16px"
@@ -142,12 +142,13 @@ export default function DesktopMenu({
             </Link>
           </Box>
         </GridItem>
-        <GridItem w="100%" h="16" justifyContent="center" display="flex">
+
+        <GridItem w="100%" justifyContent="center" display="flex">
           <Box display="flex" w="100%" h="100%">
             <Link
               as={ReactRouterLink}
               to="/trabalhe-conosco"
-              fontSize="xl"
+              fontSize={{ md: 'sm', lg: 'xl' }}
               w="100%"
               h="100%"
               p="16px"
@@ -166,7 +167,6 @@ export default function DesktopMenu({
           </Box>
         </GridItem>
       </Grid>
-      <Box w="100%" h="8px" bg="blue.200" mb="2"></Box>
 
       {children}
     </div>

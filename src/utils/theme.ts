@@ -10,6 +10,15 @@ const theme = extendTheme({
       },
     }),
   },
+
+  fonts: {
+      body: "Fredoka One",
+      heading: 'Times New Roman, sans-serif',
+      mono: 'Times New Roman, sans-serif', 
+    }
+
+
+
 })
 
 export default theme
