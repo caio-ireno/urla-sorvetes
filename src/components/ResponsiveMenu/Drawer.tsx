@@ -38,7 +38,7 @@ export default function DrawerExample() {
           <DrawerCloseButton />
           <DrawerHeader>
             <Link as={ReactRouterLink} to="/">
-              <Img src={require('../assets/urla.png')} maxH="12"></Img>
+              <Img src={require('../../assets/urla.png')} maxH="12"></Img>
             </Link>
           </DrawerHeader>
 

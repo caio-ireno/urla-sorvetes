@@ -1,5 +1,5 @@
 import { Flex, Img } from '@chakra-ui/react';
-import PlacementExample from '../Drawer';
+import PlacementExample from './Drawer';
 
 export default function MobileMenu({
   children,

@@ -1,10 +1,8 @@
-import Carousel from '../components/Carousel';
 import LinhasSorvete from '../components/SorvetesHome/LinhasSorvete';
 
-export default function Index() {
+export default function Produtos() {
   return (
     <div>
-      <Carousel />
       <LinhasSorvete />
     </div>
   );
